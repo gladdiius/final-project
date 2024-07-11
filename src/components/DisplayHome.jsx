@@ -30,10 +30,10 @@ const DisplayHome = () => {
         <div className="flex overflow-auto">
           {songsData.map((item) => (
             <SongItem
-              key={item._id}
+              key={item.id}
               name={item.name}
               desc={item.desc}
-              id={item._id}
+              id={item.id}
               image={item.image}
             />
           ))}
